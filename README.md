@@ -1,4 +1,4 @@
-# Formatted Reporter Assembly for Measuring Editing in R (frameR)
+# Formatted Reporter Assembly for Measuring Editing in R (FRAMEr)
 
 <img src="frameR.png" width="100"/>
 
@@ -24,7 +24,7 @@
    - 9.2 [format_oligos()](#92-format_oligos())
 
 ## 1. Overview
-frameR is an R package to format PRIDICT2.0 generated prime editing guide RNAs into reporter oligos for high-throughput screening. This repository allows you to run the workflow locally.
+FRAMEr is an R package to format PRIDICT2.0 generated prime editing guide RNAs into reporter oligos for high-throughput screening. This repository allows you to run the workflow locally.
 
 ## 2. Additional Resources
 
