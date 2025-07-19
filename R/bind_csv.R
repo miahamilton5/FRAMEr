@@ -1,6 +1,14 @@
+#' Import PRIDICT2 predictions (.csv)
+#'
+#' @description
+#' binds all PRIDICT output files into one data table from .csvs
+#' following classes:
+#'
+#'
+#'
 
-##takes directory of PRIDICT2 predictions (.csv)
-##binds all PRIDICT output files into one data table from .csvs
+#' @param input_directory A directory.
+#' @export
 
 bind_csv <- function(input_directory) {
   af <- base::list.files(input_directory, pattern='*.csv')
