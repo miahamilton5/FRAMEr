@@ -10,8 +10,8 @@
 #' @param input_directory A directory.
 #' @export
 
-bind_csv <- function(input_directory) {
+import_PRIDICT <- function(input_directory) {
   af <- base::list.files(input_directory, pattern='*.csv')
   all <- data.table::rbindlist(lapply(af, function(p) { data.table::fread(paste0(input_directory, p)) }))
-  all
+  return(all)
 }
