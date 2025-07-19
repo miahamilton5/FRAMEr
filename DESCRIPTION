@@ -13,3 +13,5 @@ RoxygenNote: 7.3.1
 Imports: 
     dplyr,
     magrittr
+URL: https://github.com/miahamilton5/frameR
+BugReports: https://github.com/miahamilton5/frameR/issues
