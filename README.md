@@ -42,6 +42,14 @@ If find our work useful for your research please cite: TBA
 ## 6. Generating reporter target
 
 ### 6.1 import_PRIDICT()
+####  Required:
+  -  `input_directory`: Path to PRIDICT output with prediction .csvs
+
+Example command:
+```r
+pegRNAs <- import_PRIDICT("PATH/TO/PRIDICT2/predictions/")
+``` 
+#
 
 ### 6.2 format_reporter()
 
