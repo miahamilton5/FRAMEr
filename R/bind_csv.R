@@ -1,6 +1,6 @@
 
 ##takes directory of PRIDICT2 predictions (.csv)
-##binds all PRIDICT output files into one data table
+##binds all PRIDICT output files into one data table from .csvs
 
 bind_csv <- function(input_directory) {
   af <- base::list.files(input_directory, pattern='*.csv')
