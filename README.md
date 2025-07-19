@@ -61,7 +61,7 @@ pegRNAs <- import_PRIDICT(input_directory = "PATH/TO/PRIDICT2/predictions/")
 
 Example command:
 ```r
-pegRNAs_with_reporter <- format_reporter(pegRNAs = pegRNAs)
+pegRNAs <- format_reporter(pegRNAs = pegRNAs)
 ``` 
 #
 
