@@ -24,8 +24,12 @@
    - 9.2 [format_oligos()](#92-format_oligos())
 
 ## 1. Overview
+FRAMEr is an R package to format PRIDICT2.0 generated prime editing guide RNAs into reporter oligos for high-throughput screening. This repository allows you to run the workflow locally.
 
 ## 2. Additional Resources
+
+[PRIDICT2.0](https://github.com/uzh-dqbm-cmi/PRIDICT2) is a model designed for predicting the efficiency of prime editing guide RNAs. See [Mathis et al., Nature Biotechnology, 2024](https://rdcu.be/dLu0f) and the initial [BioRxiv preprint](https://www.biorxiv.org/content/10.1101/2023.10.09.561414v1).
+
 
 ## 3. Contact
 
@@ -47,11 +51,19 @@ If find our work useful for your research please cite: TBA
 
 Example command:
 ```r
-pegRNAs <- import_PRIDICT("PATH/TO/PRIDICT2/predictions/")
+pegRNAs <- import_PRIDICT(input_directory = "PATH/TO/PRIDICT2/predictions/")
 ``` 
 #
 
 ### 6.2 format_reporter()
+####  Required:
+  -  `pegRNAs`: Dataframe of imported PRIDICT pegRNAs. Generated from import_PRIDICT()
+
+Example command:
+```r
+pegRNAs_with_reporter <- format_reporter(pegRNAs = pegRNAs)
+``` 
+#
 
 ## 7. Filter targeting pegRNAs
 
