@@ -1,4 +1,4 @@
-# frameR Tutorial
+# Formatted Reporter Assembly for Measuring Editing in R (FRAMEr)
 
 ## Index
 
