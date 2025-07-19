@@ -17,8 +17,8 @@
    - 7.2 [size_restrict_pegRNAs()](#72-size_restrict_pegRNAs())
    - 7.3 [prioritize_pegRNAs()](#73-prioritize_pegRNAs())
 8. [Add controls](#8-generating-pegRNA-library)
-   - 7.1 [create_matched_controls()](#81-create_matched_controls())
-   - 7.2 [nontargeting_pegRNAs()](#82-nontargeting_pegRNAs())
+   - 8.1 [create_matched_controls()](#81-create_matched_controls())
+   - 8.2 [nontargeting_pegRNAs()](#82-nontargeting_pegRNAs())
 9. [Format pegRNA oligos](#9-generating-pegRNA-library)
    - 9.1 [generate_barcodes()](#91-generate_barcodes())
    - 9.2 [format_oligos()](#92-format_oligos())
@@ -45,14 +45,22 @@ If find our work useful for your research please cite: TBA
 
 ### 6.2 format_reporter()
 
-## 7. Generating pegRNA library
+## 7. Filter targeting pegRNAs
 
-### 7.1 create_matched_controls()
+### 7.1 PAM_seed_disrupted()
 
-### 7.2 nontargeting_pegRNAs()
+### 7.2 size_restrict_pegRNAs()
+
+### 7.3 prioritize_pegRNAs()
 
 ## 8. Add controls
 
 ### 8.1 create_matched_controls()
 
 ### 8.2 nontargeting_pegRNAs()
+
+## 9. Format pegRNA oligos
+
+### 9.1 generate_barcodes()
+
+### 9.2 format_oligos()
