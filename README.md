@@ -1,4 +1,4 @@
-# Formatted Reporter Assembly for Measuring Editing in R (FRAMEr)
+# Formatted Reporter Assembly for Measuring Editing in R (FRAMEr) <img src="frameR.png" width="200"/>
 
 ## Index
 
