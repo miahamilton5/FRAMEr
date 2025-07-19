@@ -33,5 +33,3 @@ format_reporter <- function(x) {
 
   PRIDICT_targeting_pegRNAs_all_reporter
 }
-
-
