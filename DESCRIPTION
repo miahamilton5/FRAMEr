@@ -2,7 +2,7 @@ Package: frameR
 Title: Formats activity normalized prime editing gRNA (pegRNA) libraries from PRIDICT2.0 outputs with matched controls
 Version: 0.0.0.9000
 Authors@R: 
-    person("Marisa", "Hamilton", , "", role = c("aut", "cre"),
+    person("Marisa", "Hamilton", , "marisa.hamilton@duke.edu", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-1132-9712"))
 Description: frameR is a workflow that takes PRIDICT2.0 .csv outputs in a directory and binds them together into a dataframe. frameR then formats a reporter sequence or 'pseudo target' for use in measuring editing efficiency of the pegRNA in high-throughput screens. frameR can also be used to filter pegRNAs for library generation, to create matched controls installing the reference allele, and to format final oligos for ordering in a pooled format.
 License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
