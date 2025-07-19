@@ -11,7 +11,7 @@
 #' @export
 
 import_PRIDICT <- function(input_directory) {
-  af <- base::list.files(input_directory, pattern='*.csv')
+  af <- base::list.files(input_directory = input_directory, pattern='*.csv')
   all <- data.table::rbindlist(lapply(af, function(p) { data.table::fread(paste0(input_directory, p)) }))
   return(all)
 }

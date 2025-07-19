@@ -19,6 +19,6 @@ size_restrict_pegRNAs <- function(x, five_prime_overhang = "GTGGAAAGGACGAAACACC"
   }
 
   ##print filtered list
-  print(x)
+  x
 
 }

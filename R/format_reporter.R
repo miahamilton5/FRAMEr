@@ -1,9 +1,9 @@
 
 ##this function adds a new column to the aggregated PRIDICT output table containing the reporter sequence
 
-format_reporter <- function(x) {
+format_reporter <- function(pegRNAs = x) {
   ##ensure data.table
-  PRIDICT_targeting_pegRNAs_all <- data.table::as.data.table(x)
+  PRIDICT_targeting_pegRNAs_all <- data.table::as.data.table(pegRNAs)
   # Initialize columns: PBSlocation, RT_initial_location, RT_mutated_location
   cols <- c("protospacerlocation_only_initial", "PBSlocation", "RT_initial_location")
   # Remove brackets and split values into start and end
