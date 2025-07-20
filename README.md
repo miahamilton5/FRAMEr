@@ -15,7 +15,7 @@
 7. [Filter targeting pegRNAs](#7-filter-pegRNAs)
    - 7.1 [PAM_seed_disrupted()](#71-PAM_seed_disrupted())
    - 7.2 [size_restrict_pegRNAs()](#72-size_restrict_pegRNAs())
-   - 7.3 [prioritize_pegRNAs()](#73-prioritize_pegRNAs())
+   - 7.3 [pick_pegRNAs()](#73-prioritize_pegRNAs())
 8. [Add controls](#8-generating-pegRNA-library)
    - 8.1 [create_matched_controls()](#81-create_matched_controls())
    - 8.2 [nontargeting_pegRNAs()](#82-nontargeting_pegRNAs())
@@ -61,17 +61,56 @@ pegRNAs <- import_PRIDICT(input_directory = "PATH/TO/PRIDICT2/predictions/")
 
 Example command:
 ```r
-pegRNAs_with_reporter <- format_reporter(pegRNAs = pegRNAs)
+pegRNAs <- format_reporter(pegRNAs = pegRNAs)
 ``` 
 #
 
 ## 7. Filter targeting pegRNAs
 
 ### 7.1 PAM_seed_disrupted()
+####  Required:
+  -  `pegRNAs`: Dataframe of pegRNAs
+
+Example command:
+```r
+pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
+``` 
+#
 
 ### 7.2 size_restrict_pegRNAs()
+####  Required:
+  -  `pegRNAs`: Dataframe of pegRNAs containing 'reporter' column generated from format_reporter()
 
-### 7.3 prioritize_pegRNAs()
+####  Optional:
+   - `five_prime_overhang`: 5' overhang for PCR amplification and plasmid cloning. Default: "GTGGAAAGGACGAAACACC"
+   - `tevopreq1`: tevopreQ1 sequence, enter "" for no tevopreQ1. Default: "CGCGGTTCTATCTAGTTACGCGTTAAACCAACTAGAA"
+   - `terminator`: terminator sequence following tevopreQ1. Default: "TTTTTTT"
+   - `barcode_length`: length of the pegRNA barcode. Enter 0 for no barcode. Default: 7
+   - `three_prime_overhang`: 3' overhang for PCR amplification and plasmid cloning. Default: "AGATCGGAAGAGCACACGTC"
+   - `matched_controls`: TRUE/FALSE to adjust the length requirements to account for future matched control pegRNAs. e.g. matched control pegRNAs for a 5 bp deletion will be 5 bases longer than the targeting pegRNA. Default: TRUE
+   - `size_limit`: size limit of oligos. Default: 300
+
+Example command:
+```r
+pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
+``` 
+#
+
+### 7.3 pick_pegRNAs()
+####  Required:
+  -  `pegRNAs`: Dataframe of pegRNAs
+  -  `number_of_pegRNAs`: Number of pegRNAs per edit to pick
+  -  `PRIDICT_celltype`: PRIDICT score to rank by. Options: "HEK" (MMR deficienct) or "K562" (MMR proficient)
+
+####  Optional:
+   - `remove_PAM_seed_disrupted`: TRUE/FALSE to remove pegRNAs that disrupt the PAM or seed region of the pegRNA. Default: FALSE
+   - `PRIDICT_threshold`: Will remove all pegRNAs for a particular edit if that edit does not have at least one pegRNA with a PRIDICT score greater than or equal to this threshold
+
+Example command:
+```r
+pegRNAs <- pick_pegRNAs(pegRNAs, number_of_pegRNAs = 4, PRIDICT_celltype = "HEK", remove_PAM_seed_disrupted = TRUE, PRIDICT_threshold = 18)
+``` 
+#
 
 ## 8. Add controls
 
