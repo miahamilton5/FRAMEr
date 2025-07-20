@@ -96,7 +96,21 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
 ``` 
 #
 
-### 7.3 prioritize_pegRNAs()
+### 7.3 pick_pegRNAs()
+####  Required:
+  -  `pegRNAs`: Dataframe of pegRNAs
+  -  `number_of_pegRNAs`: Number of pegRNAs per edit to pick
+  -  `PRIDICT_celltype`: PRIDICT score to rank by. Options: "HEK" (MMR deficienct) or "K562" (MMR proficient)
+
+####  Optional:
+   - `remove_PAM_seed_disrupted`: TRUE/FALSE to remove pegRNAs that disrupt the PAM or seed region of the pegRNA. Default: FALSE
+   - `PRIDICT_threshold`: Will remove all pegRNAs for a particular edit if that edit does not have at least one pegRNA with a PRIDICT score greater than or equal to this threshold
+
+Example command:
+```r
+pegRNAs <- pick_pegRNAs(pegRNAs, number_of_pegRNAs = 4, PRIDICT_celltype = "HEK", remove_PAM_seed_disrupted = TRUE, PRIDICT_threshold = 18)
+``` 
+#
 
 ## 8. Add controls
 
