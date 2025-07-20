@@ -15,7 +15,7 @@
 7. [Filter targeting pegRNAs](#7-filter-pegRNAs)
    - 7.1 [PAM_seed_disrupted()](#71-PAM_seed_disrupted())
    - 7.2 [size_restrict_pegRNAs()](#72-size_restrict_pegRNAs())
-   - 7.3 [prioritize_pegRNAs()](#73-prioritize_pegRNAs())
+   - 7.3 [pick_pegRNAs()](#73-prioritize_pegRNAs())
 8. [Add controls](#8-generating-pegRNA-library)
    - 8.1 [create_matched_controls()](#81-create_matched_controls())
    - 8.2 [nontargeting_pegRNAs()](#82-nontargeting_pegRNAs())
