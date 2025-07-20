@@ -1,8 +1,8 @@
 ##this function adds a new column to the aggregated PRIDICT output table with a TRUE or FALSE value if the PAM and/or seed regions are disrupted
 
-PAM_seed_disrupted <- function(x) {
+PAM_seed_disrupted <- function(pegRNAs) {
   ##ensure data.table
-  PRIDICT_targeting_pegRNAs_all <- data.table::as.data.table(x)
+  PRIDICT_targeting_pegRNAs_all <- data.table::as.data.table(pegRNAs)
   # Initialize columns: PBSlocation, RT_initial_location, RT_mutated_location
   cols <- c("protospacerlocation_only_initial", "PBSlocation", "RT_initial_location")
   # Remove brackets and split values into start and end
