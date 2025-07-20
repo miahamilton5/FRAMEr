@@ -82,13 +82,13 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
   -  `pegRNAs`: Dataframe of pegRNAs containing 'reporter' column generated from format_reporter()
 
 ####  Optional:
-   - 'five_prime_overhang': 5' overhang for PCR amplification and plasmid cloning. Default: "GTGGAAAGGACGAAACACC"
-   - 'tevopreq1': tevopreQ1 sequence, enter "" for no tevopreQ1. Default: "CGCGGTTCTATCTAGTTACGCGTTAAACCAACTAGAA"
-   - 'terminator': terminator sequence following tevopreQ1. Default: "TTTTTTT"
-   - 'barcode_length': length of the pegRNA barcode. Enter 0 for no barcode. Default: 7
-   - 'three_prime_overhang': 3' overhang for PCR amplification and plasmid cloning. Default: "AGATCGGAAGAGCACACGTC"
-   - 'matched_controls': TRUE/FALSE to adjust the length requirements to account for future matched control pegRNAs. e.g. matched control pegRNAs for a 5 bp deletion will be 5 bases longer than the targeting pegRNA. Default: TRUE
-   - 'size_limit': size limit of oligos. Default: 300
+   - `five_prime_overhang`: 5' overhang for PCR amplification and plasmid cloning. Default: "GTGGAAAGGACGAAACACC"
+   - `tevopreq1`: tevopreQ1 sequence, enter "" for no tevopreQ1. Default: "CGCGGTTCTATCTAGTTACGCGTTAAACCAACTAGAA"
+   - `terminator`: terminator sequence following tevopreQ1. Default: "TTTTTTT"
+   - `barcode_length`: length of the pegRNA barcode. Enter 0 for no barcode. Default: 7
+   - `three_prime_overhang`: 3' overhang for PCR amplification and plasmid cloning. Default: "AGATCGGAAGAGCACACGTC"
+   - `matched_controls`: TRUE/FALSE to adjust the length requirements to account for future matched control pegRNAs. e.g. matched control pegRNAs for a 5 bp deletion will be 5 bases longer than the targeting pegRNA. Default: TRUE
+   - `size_limit`: size limit of oligos. Default: 300
 
 Example command:
 ```r
