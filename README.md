@@ -47,7 +47,7 @@ If find our work useful for your research please cite: TBA
 * Start a terminal and run:
     ```shell
     # clone FRAMEr repository
-    git clone https://github.com/uzh-dqbm-cmi/PRIDICT2.git
+    git clone https://github.com/miahamilton5/FRAMEr.git
     ```
 * Start RStudio and run:
     ```r
