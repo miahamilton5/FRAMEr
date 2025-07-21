@@ -19,6 +19,7 @@
 8. [Add controls](#8-generating-pegRNA-library)
    - 8.1 [create_matched_controls()](#81-create_matched_controls())
    - 8.2 [nontargeting_pegRNAs()](#82-nontargeting_pegRNAs())
+   - 8.3 [compile_pegRNAs()](#82-compile_pegRNAs())
 9. [Format pegRNA oligos](#9-generating-pegRNA-library)
    - 9.1 [generate_barcodes()](#91-generate_barcodes())
    - 9.2 [format_oligos()](#92-format_oligos())
@@ -142,6 +143,8 @@ matched_pegRNAs <- create_matched_controls(pegRNAs)
 ``` 
 
 ### 8.2 nontargeting_pegRNAs()
+
+### 8.3 compile_pegRNAs()
 
 ## 9. Format pegRNA oligos
 
