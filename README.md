@@ -10,7 +10,7 @@
 4. [Citation](#4-citation)
 5. [Installation using Anaconda (Linux, Mac OS or WSL)](#5-installation-using-anaconda-linux-mac-os-or-wsl)
 6. [Generating reporter target](#6-generating-reporter-target)
-   - 6.1 [import_PRIDICT()](#61-import_pridict())
+   - 6.1 [import_PRIDICT()](#61-import-pridict())
    - 6.2 [format_reporter()](#62-format_reporter())
 7. [Filter targeting pegRNAs](#7-filter-targeting-pegrnas)
    - 7.1 [PAM_seed_disrupted()](#71-PAM_seed_disrupted())
