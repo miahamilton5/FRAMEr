@@ -92,7 +92,7 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
 
 Example command:
 ```r
-pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
+pegRNAs <- size_restrict_pegRNAs(pegRNAs = pegRNAs)
 ``` 
 #
 
