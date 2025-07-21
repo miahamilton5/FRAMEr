@@ -92,7 +92,7 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
 
 Example command:
 ```r
-pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
+pegRNAs <- size_restrict_pegRNAs(pegRNAs = pegRNAs)
 ``` 
 #
 
@@ -108,7 +108,7 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
 
 Example command:
 ```r
-pegRNAs <- pick_pegRNAs(pegRNAs, number_of_pegRNAs = 4, PRIDICT_celltype = "HEK", remove_PAM_seed_disrupted = TRUE, PRIDICT_threshold = 18)
+pegRNAs <- pick_pegRNAs(pegRNAs, number_of_pegRNAs = 4, PRIDICT_celltype = "HEK", remove_PAM_seed_disrupted = TRUE, PRIDICT_threshold = 50)
 ``` 
 #
 
