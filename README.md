@@ -12,7 +12,7 @@
 6. [Generating reporter target](#6-generating-reporter-target)
    - 6.1 [import_PRIDICT()](#61-import_PRIDICT())
    - 6.2 [format_reporter()](#62-format_reporter())
-7. [Filter targeting pegRNAs](#7-filter-pegRNAs)
+7. [Filter targeting pegRNAs](#7-filter-pegrnas)
    - 7.1 [PAM_seed_disrupted()](#71-PAM_seed_disrupted())
    - 7.2 [size_restrict_pegRNAs()](#72-size_restrict_pegRNAs())
    - 7.3 [pick_pegRNAs()](#73-prioritize_pegRNAs())
