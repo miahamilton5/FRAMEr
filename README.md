@@ -42,7 +42,7 @@ For questions or suggestions, please either:
 
 If find our work useful for your research please cite: TBA
 
-## 5. Installation using Anaconda (Linux, Mac OS or WSL)
+## 5. Installation
 
 * Start a terminal and run:
     ```shell
