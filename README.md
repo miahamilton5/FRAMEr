@@ -44,6 +44,20 @@ If find our work useful for your research please cite: TBA
 
 ## 5. Installation using Anaconda (Linux, Mac OS or WSL)
 
+* Start a terminal and run:
+    ```shell
+    # clone FRAMEr repository
+    git clone https://github.com/uzh-dqbm-cmi/PRIDICT2.git
+    ```
+* Start RStudio and run:
+    ```r
+   install.packages("devtools")
+   library(devtools)
+   FRAMEr = devtools::build("~/put/the/package/path/here")
+   devtools::install_local(FRAMEr)
+   library(FRAMEr)
+    ```
+
 ## 6. Generating reporter target
 
 ### 6.1 import_PRIDICT()
