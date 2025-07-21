@@ -69,7 +69,7 @@ Creates an R dataframe of PRIDICT pegRNAs from directory containing PRIDICT outp
 
 Example command:
 ```r
-pegRNAs <- import_PRIDICT(input_directory = "PATH/TO/PRIDICT2/predictions/")
+pegRNAs <- import_PRIDICT(input_directory = "/PATH/TO/PRIDICT2/predictions/")
 ``` 
 #
 
