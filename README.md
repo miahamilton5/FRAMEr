@@ -8,7 +8,7 @@
 2. [Additional Resources](#2-additional-resources)
 3. [Contact](#3-contact)
 4. [Citation](#4-citation)
-5. [Installation using Anaconda (Linux, Mac OS or WSL)](#5-installation-using-anaconda-linux-mac-os-or-wsl)
+5. [Installation](#5-installation-using-anaconda-linux-mac-os-or-wsl)
 6. [Generating reporter target](#6-generating-reporter-target)
    - 6.1 [import_PRIDICT()](#61-import_pridict())
    - 6.2 [format_reporter()](#62-format_reporter())
