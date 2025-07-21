@@ -53,9 +53,9 @@ If find our work useful for your research please cite: TBA
     ```r
    install.packages("devtools")
    library(devtools)
-   FRAMEr = devtools::build("~/put/the/package/path/here")
-   devtools::install_local(FRAMEr)
-   library(FRAMEr)
+   frameR = devtools::build("~/put/the/package/path/here")
+   devtools::install_local(frameR)
+   library(frameR)
     ```
 
 ## 6. Generating reporter target
