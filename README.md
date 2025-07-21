@@ -46,6 +46,9 @@ If find our work useful for your research please cite: TBA
 ## 6. Generating reporter target
 
 ### 6.1 import_PRIDICT()
+
+Creates an R dataframe of PRIDICT pegRNAs from directory containing PRIDICT outputs
+
 ####  Required:
   -  `input_directory`: Path to PRIDICT output with prediction .csvs
 
@@ -56,6 +59,9 @@ pegRNAs <- import_PRIDICT(input_directory = "PATH/TO/PRIDICT2/predictions/")
 #
 
 ### 6.2 format_reporter()
+
+Adds column to pegRNA dataframe containing reporter sequence
+
 ####  Required:
   -  `pegRNAs`: Dataframe of imported PRIDICT pegRNAs. Generated from import_PRIDICT()
 
@@ -68,6 +74,9 @@ pegRNAs <- format_reporter(pegRNAs = pegRNAs)
 ## 7. Filter targeting pegRNAs
 
 ### 7.1 PAM_seed_disrupted()
+
+Adds column to pegRNA dataframe indicating TRUE/FALSE for edit disrupting the PAM or seed regions of the pegRNA target sequence
+
 ####  Required:
   -  `pegRNAs`: Dataframe of pegRNAs
 
@@ -78,6 +87,9 @@ pegRNAs <- PAM_seed_disrupted(pegRNAs = pegRNAs)
 #
 
 ### 7.2 size_restrict_pegRNAs()
+
+Removes pegRNAs surpasing size limitations. Default oligo length = 300
+
 ####  Required:
   -  `pegRNAs`: Dataframe of pegRNAs containing 'reporter' column generated from format_reporter()
 
@@ -97,6 +109,9 @@ pegRNAs <- size_restrict_pegRNAs(pegRNAs = pegRNAs)
 #
 
 ### 7.3 pick_pegRNAs()
+
+Subsets a dataframe of pegRNAs based on number of desired pegRNAs, ranking by PRIDICT score
+
 ####  Required:
   -  `pegRNAs`: Dataframe of pegRNAs
   -  `number_of_pegRNAs`: Number of pegRNAs per edit to pick
@@ -115,6 +130,16 @@ pegRNAs <- pick_pegRNAs(pegRNAs, number_of_pegRNAs = 4, PRIDICT_celltype = "HEK"
 ## 8. Add controls
 
 ### 8.1 create_matched_controls()
+
+Creates a new dataframe of matched control pegRNAs from a dataframe of targeting pegRNAs
+
+####  Required:
+  -  `pegRNAs`: Dataframe of pegRNAs
+
+Example command:
+```r
+matched_pegRNAs <- create_matched_controls(pegRNAs)
+``` 
 
 ### 8.2 nontargeting_pegRNAs()
 
